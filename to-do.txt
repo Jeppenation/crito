@@ -1,0 +1,13 @@
+- skapa komponenter utav knapparna. (50:10 i videon)
+    -<button text="blabla" url="/services/blabla" />
+        -const button = ({ text, url}) => {
+                <a className='btn-blabla' href={url}>
+                   {text}
+                    <i className='fa-solid fa-arrow-up-right></i>
+                </a>
+            }
+        -import Button 'sökvägen'
+
+
+
+

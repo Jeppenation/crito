@@ -1,6 +1,6 @@
 import React from 'react'
-import Showcase from './showcase'
-import Brands from './brands'
+import Showcase from './showcase/showcase'
+import Brands from './brands/brands'
 
 const main = () => {
   return (

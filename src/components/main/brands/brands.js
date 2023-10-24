@@ -1,9 +1,11 @@
 import React from 'react'
-import img_paperz from '../assets/images/Paperz.svg'
-import img_dorfus from '../assets/images/Dorfus.svg'
-import img_martin from '../assets/images/Martin.svg'
-import img_square from '../assets/images/square-logo.svg'
-import img_gobona from '../assets/images/Gobona-logo.svg'
+import img_paperz from '../../../assets/images/Paperz.svg'
+import img_dorfus from '../../../assets/images/Dorfus.svg'
+import img_martin from '../../../assets/images/Martin.svg'
+import img_square from '../../../assets/images/square-logo.svg'
+import img_gobona from '../../../assets/images/Gobona-logo.svg'
+
+import '../brands/brands.css'
 
 const brands = () => {
   return (

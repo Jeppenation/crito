@@ -1,0 +1,1670 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
+
+html,
+body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.review-stars {
+  color: #f94d1c;
+}
+
+.pagi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .pagi-item {
+    .pagi-dot {
+      background-color: #666666;
+      height: 10px;
+      width: 10px;
+      margin: 10px;
+
+      border: 1px solid #666666;
+      border-radius: 50%;
+
+      margin-bottom: 50px;
+
+      &:hover {
+        background-color: #191919;
+      }
+    }
+  }
+}
+
+.btn-theme {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+
+  // creates more room for the text, and a larger button
+  padding: 12px 30px;
+
+  // 600 in font-weight is semi-bold
+  font-weight: 600;
+
+  // border-radius creates a more rounder form of a button
+  border-radius: 25px;
+
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
+  // settings for when we hover over the button
+  &:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f0efe9;
+  }
+
+  // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #fff;
+  text-decoration: none;
+
+  // creates more room for the text, and a larger button
+  padding: 12px 30px;
+
+  // 600 in font-weight is semi-bold
+  font-weight: 600;
+
+  // border-radius creates a more rounder form of a button
+  border-radius: 25px;
+
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
+  // settings for when we hover over the button
+  &:hover {
+    background-color: #fff;
+    border: 1px solid #191919;
+    color: #191919;
+  }
+
+  // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
+  &:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f0efe9;
+  }
+
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+}
+
+.btn-play {
+  color: #191919;
+  padding: 20px 20px;
+  border: 1px solid #191919;
+  border-radius: 50%;
+
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
+}
+
+.section-title {
+  padding-top: 70px;
+  padding-bottom: 30px;
+
+  @media (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+
+  p {
+    color: #f94d1c;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    margin: 10px;
+  }
+
+  h2 {
+    color: #191919;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+  }
+}
+
+.wrapper-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// header {
+//   background-color: #f0efe9;
+//   padding: 16px;
+//   align-items: center;
+
+//   .container {
+//     display: grid;
+//     grid-template-columns: 1fr auto;
+//     grid-template-areas: "logotype bars";
+//     align-items: center;
+
+//     @media (min-width: 992px) {
+//       grid-template-columns: auto 1fr auto;
+//       grid-template-areas:
+//         "logotype cib social"
+//         "logotype menu menu";
+//     }
+
+//     .btn-menubars {
+//       grid-area: bars;
+//       border: none;
+//       font-size: 25px;
+//       background-color: transparent;
+//       @media (min-width: 992px) {
+//         display: none;
+//       }
+//     }
+//     .logotype {
+//       grid-area: logotype;
+//       margin-right: 70px;
+//     }
+//     .contact-information-bar {
+//       grid-area: cib;
+//       display: none;
+
+//       justify-content: flex-start;
+//       align-content: center;
+
+//       @media (min-width: 992px) {
+//         display: flex;
+//       }
+
+//       .content-box {
+//         padding-right: 20px;
+//         margin-right: 30px;
+//         border-right: 1px solid #666666;
+
+//         font-family: "Inter", sans-serif;
+
+//         // 300 font-weight is 'light'
+//         font-weight: 300;
+//         font-size: 15px;
+
+//         // the settings for i-tag, concerning icons.
+//         i {
+//           // Moves the text sligtly to the right.
+//           margin-right: 5px;
+
+//           // em is depended on the font of the parent (content-box). Since we wanted the icons
+//           //larger, we went with 1.2em
+//           font-size: 1.2em;
+//           color: #666666;
+//         }
+
+//         // Only affects the last one, the adress, since we dont want the border on it's right side
+//         &.last {
+//           border: none;
+//         }
+//       }
+//     }
+//     .socialmedia {
+//       grid-area: social;
+//       display: none;
+
+//       @media (min-width: 992px) {
+//         display: block;
+//       }
+
+//       a {
+//         color: #191919;
+//         font-size: 1.2rem;
+//         margin-left: 10px;
+
+//         &:hover {
+//           color: #b9b6b6;
+//         }
+//       }
+//     }
+//     .menu {
+//       display: none;
+//       grid-area: menu;
+//       justify-content: space-between;
+//       align-items: center;
+//       border-top: 1px solid #dad9d3;
+//       margin-top: 10px;
+//       padding-top: 10px;
+
+//       @media (min-width: 992px) {
+//         display: flex;
+//       }
+
+//       nav {
+//         // a == links. here we controll how they act and look
+//         a {
+//           display: inline-block;
+//           color: #191919;
+//           text-decoration: none;
+//           margin-right: 30px;
+
+//           // this part we have not gone through yet.
+//           position: relative;
+
+//           // what happens when the link is active
+//           &.active {
+//             font-weight: 500;
+//           }
+
+//           // regulates what happens after it's been activate, and when we hover the link
+//           // content, position and transform, we havent gone through yet.
+//           &.active::after,
+//           &:hover::after {
+//             content: "";
+//             font-weight: 500;
+//             position: absolute;
+
+//             height: 2px;
+//             width: 15px;
+
+//             background-color: #191919;
+//             left: 50%;
+//             bottom: -3px;
+
+//             transform: translate((calc(50% - 15px)));
+//           }
+//         }
+
+//         .btn-login {
+//           padding-top: 12px;
+//           padding-bottom: 12px;
+//         }
+//       }
+//     }
+//   }
+// }
+main {
+  // .showcase {
+  //   background-color: #f0efe9;
+
+  //   position: relative;
+
+  //   #vector5 {
+  //     position: absolute;
+
+  //     bottom: 0;
+  //     left: 0;
+
+  //     z-index: 0;
+  //   }
+
+  //   // since we have content, and img under content, this acts as a parent class for them.
+  //   .container {
+  //     // we wanted the content to the left, and the img to the right. So we made it a flexbox
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+
+  //     // governs the content, or the text
+  //     .content {
+  //       padding-top: 40px;
+  //       padding-bottom: 40px;
+  //       text-align: center;
+
+  //       z-index: 0;
+
+  //       @media (min-width: 1200px) {
+  //         text-align: left;
+  //       }
+  //       // the "title", we choose h1 since it's the largest one and considerd to be
+  //       // the main title. although we changed how it looked here.
+  //       // this is manily a practical use for us.
+  //       h1 {
+  //         font-family: "DM Sans", sans-serif;
+  //         font-weight: 700;
+  //         font-size: 40px;
+
+  //         @media (min-width: 768px) {
+  //           font-size: 70px;
+  //         }
+
+  //         @media (min-width: 1400px) {
+  //           font-size: 86px;
+  //         }
+  //       }
+
+  //       // changes the style of the paragraph in this content
+  //       // we choose p, since it's maninly used as a paragraph.
+  //       // although we changed the looks with this code.
+  //       p {
+  //         font-size: 16px;
+  //         padding-top: 40px;
+  //         padding-bottom: 35px;
+  //         padding-left: 10px;
+  //         padding-right: 10px;
+
+  //         @media (min-width: 768px) {
+  //           font-size: 20px;
+  //           padding-left: 0;
+  //           padding-right: 0;
+  //         }
+  //       }
+
+  //       // since we have two buttons,  we added an a tag here as well.
+  //       a {
+  //         // created some space between the two buttons
+  //         margin-right: 0px;
+  //         display: block;
+  //         margin-bottom: 20px;
+
+  //         @media (min-width: 768px) {
+  //           display: inline-block;
+  //         }
+  //       }
+  //     }
+
+  //     img {
+  //       display: none;
+  //       margin-right: -50px;
+
+  //       @media (min-width: 1200px) {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // parentobject for project and cas
+  .project-and-case {
+    .container {
+      // section-title controlls and sets <p> to red and h2 to bold, amongst otherthings
+      // Since it's not center on everything, we changed it to be alligned center here
+      .section-title {
+        text-align: center;
+
+        h2 {
+          font-size: 35px;
+        }
+        @media (min-width: 720px) {
+          font-size: 45px;
+        }
+      }
+
+      //
+      .project-and-cases {
+        display: grid;
+
+        //at a certain point, 720px in this case, we change the columns to 1 column
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        //since we wanted to make two columns, we used grid-template-columns: 1fr 1fr here
+        @media (min-width: 720px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        //This grid controlls the text on each of the article.
+        .project {
+          display: grid;
+
+          //since we want the text to be one 1-2 rows, we specified it to be 1fr column
+          grid-template-columns: 1fr;
+
+          //we added this part so that the line beneath the articles are even.
+          grid-template-rows: auto 1fr auto;
+          color: #191919;
+          text-decoration: none;
+
+          //this alows the picture to change size, depending on the view-port
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          //we change font, font-weight and pixelsize
+          h3 {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            padding-top: 35px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #1919191a;
+          }
+
+          //readmore is the Read More button beneath the articles
+          .readmore {
+            padding: 15px;
+            display: block;
+            text-align: right;
+            color: #191919;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+
+            //the icon for the arrow to the side of "read more". we wanted it further right, so we added margin-left
+            i {
+              margin-left: 3px;
+            }
+          }
+
+          //When you hover over the picture, or read more button, you'll get an underline
+          &:hover .readmore {
+            text-decoration: underline;
+          }
+        }
+      }
+      //centers the content. used in this case for the title and sub-title
+      .center-content {
+        margin-top: 50px;
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+  //brands is the parent of the sub-classes
+  // .brands {
+  //   //container adds some padding to the left and to the right.
+  //   .container {
+  //     // since it's just pictures on a line, we went with Flex
+  //     display: flex;
+  //     justify-content: center;
+
+  //     //controlls how the flex will behave when it runs out of space on the horizontal plane
+  //     flex-wrap: wrap;
+  //     padding-top: 30px;
+  //     padding-bottom: 30px;
+
+  //     @media (min-width: 768px) {
+  //       //here we went with space-around, since it looked best that way
+  //       justify-content: space-around;
+  //       padding-top: 70px;
+  //       padding-bottom: 70px;
+  //     }
+
+  //     .logo {
+  //       padding: 10px;
+
+  //       img {
+  //         //made the image responsive and added some margin to the bottom and to the left, so that they will get some breathing room
+  //         //on a smaller screen.
+  //         max-width: 100%;
+  //         height: auto;
+  //         margin-bottom: 15px;
+  //         margin-left: 15px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .features-parent {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      border: 1px solid #66191919;
+      padding: 20px;
+
+      @media (min-width: 960px) {
+        padding: 100px;
+      }
+
+      flex-wrap: wrap;
+
+      .features-flex {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        margin-right: 0;
+        // text-align: center;
+
+        @media (min-width: 1140px) {
+          margin-right: 100px;
+        }
+
+        .section-title {
+          margin: 0;
+          padding: 0;
+          padding-right: 100px;
+
+          text-align: start;
+
+          h2 {
+            font-size: 35px;
+          }
+          @media (min-width: 720px) {
+            font-size: 45px;
+            padding: 0px;
+          }
+        }
+        .btn-theme {
+          // width: 100%;
+          text-align: center;
+          margin-top: auto;
+        }
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex: 1;
+
+        gap: 80px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+
+        @media (min-width: 960px) {
+          margin-left: 130px;
+        }
+
+        @media (min-width: 700px) {
+          margin-left: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #191919;
+
+          i {
+            font-size: 22px;
+            margin-bottom: 20px;
+          }
+
+          h3 {
+            font-size: 22px;
+            text-align: left;
+          }
+          p {
+            grid-row: span 2;
+          }
+        }
+      }
+    }
+  }
+
+  .about-company {
+    .container {
+      // border: 1px solid black;
+      margin-top: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap;
+
+      .img-box {
+        // flex: 1;
+        height: 450px;
+
+        @media (min-width: 430px) {
+          height: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .overlay-box {
+          height: 180px;
+          width: 370px;
+          background-color: #beebff;
+
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-top: 35px;
+          padding-bottom: 60px;
+
+          position: relative;
+
+          bottom: 215px;
+
+          @media (min-width: 720px) {
+            right: 60px;
+          }
+
+          .name {
+            color: #191919;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+          }
+          .position {
+            color: #f94d1c;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+          }
+          p {
+            margin-top: 25px;
+            font-style: italic;
+          }
+        }
+      }
+
+      .about-company-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 1100px) {
+          margin-left: 50px;
+        }
+
+        @media (min-width: 1200px) {
+          margin-left: 250px;
+        }
+
+        .section-title {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          p {
+            font-size: 18px;
+          }
+
+          h2 {
+            font-size: 35px;
+          }
+
+          @media (min-width: 720px) {
+            h2 {
+              font-size: 45px;
+            }
+          }
+        }
+
+        p {
+          margin-top: 30px;
+          line-height: 2;
+        }
+
+        .ac-buttons {
+          display: inline-block;
+          margin-top: 75px;
+
+          .btn-play {
+            margin-left: 40px;
+            padding: 10px 14px;
+            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
+
+            &:hover {
+              background-color: #191919;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our-services {
+    //sets the background for the whole section
+    background-color: #f0efe9;
+    position: relative;
+
+    #vector1 {
+      position: absolute;
+
+      bottom: -80px;
+      right: 0;
+    }
+
+    #vector2 {
+      position: absolute;
+      bottom: -40px;
+      right: 0;
+    }
+
+    .container {
+      //removes the padding of container
+      padding: 0;
+      //also changes the background to the correct one
+      background-color: #f0efe9;
+
+      //to fill out the bottom abit
+      padding-bottom: 60px;
+      // border: 1px solid black;
+      z-index: 0;
+
+      .center-content {
+        // Below is the styling for the button below the boxes
+        .browse-btn {
+          color: #191919;
+          text-decoration: none;
+          text-align: center;
+          border: 1px solid #191919;
+
+          z-index: 1;
+
+          // to make the border more rounder
+          border-radius: 60px;
+          padding: 20px 50px 20px;
+          background-color: #f0efe9;
+
+          margin-top: 50px;
+
+          // adds some transition styling ot it, it looked best (imo) with 0.1s
+          transition: background-color 0.3s ease;
+          transition: color 0.3s ease;
+
+          // semi-bold
+          font-weight: 600;
+
+          // moves the arrow on the button slightly to the right
+          i {
+            margin-left: 15px;
+          }
+
+          &:hover {
+            background-color: #191919;
+            color: #f0efe9;
+          }
+        }
+      }
+
+      .section-title {
+        // aligns the text to the center, when the screen as below 1200px
+        text-align: center;
+
+        // adds some paddings
+        margin-left: 5px;
+        margin-right: 5px;
+
+        h2 {
+          font-size: 35px;
+        }
+
+        // when the screen resolution is above 1200px, it sets the text to the left
+        @media (min-width: 1200px) {
+          text-align: left;
+          padding-right: 800px;
+          margin: 0px;
+
+          h2 {
+            font-size: 45px;
+          }
+        }
+      }
+
+      // the "parent"for the boxes
+      .os-boxes {
+        // i first tried with flexbox, but went with grid instead
+        display: grid;
+
+        // smaller screen resolution can acommndate 2 rows
+        grid-template-columns: 1fr 1fr;
+
+        // pushes the boxes from the side, sliglty
+        margin-left: 5px;
+        margin-right: 5px;
+
+        // when the screen is larger, we can have those on the same row
+        @media (min-width: 720px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+
+          // creates a gap
+          gap: 40px;
+
+          // moves the boxes from the side, slightly
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        // the main boxes, the white ones
+        .os-box {
+          border: 1px solid black;
+          padding: 40px;
+
+          // since it's a link, we change the standard color from blue and remove the underline
+          text-decoration: none;
+          color: #191919;
+          padding: 20px;
+
+          background-color: #fff;
+          transition: background-color 0.3s ease;
+
+          margin: 10px;
+
+          // To make the top-bar
+          position: relative;
+          flex: 1;
+          transition: boarder 0.3s ease;
+
+          @media (min-width: 720px) {
+            margin: 0px;
+          }
+
+          //  controlls the arrowbutton in the boxes
+          .arrow-btn {
+            display: flex;
+            justify-content: end;
+
+            // since the boxes is a icon, we added some padding to it
+            i {
+              margin-right: 0px;
+
+              padding: 20px;
+
+              // i went with 50% to make it round
+              border-radius: 50%;
+
+              color: #fff;
+              background-color: #191919;
+              transition: background-color 0.3s ease;
+
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            margin-top: 85px;
+          }
+          // design for the top-bar
+          &::before {
+            content: "";
+            position: absolute;
+            top: 45px;
+            left: 30px;
+            width: 10%;
+            height: 2px;
+            background-color: #191919;
+          }
+
+          &:hover {
+            background-color: #f9d783;
+
+            .arrow-btn {
+              i {
+                background-color: #fff;
+                color: #191919;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .why-choose-us {
+    margin-top: 50px;
+    position: relative;
+
+    .wcu-overlaybox {
+
+      @media (min-width: 1180px) {
+        display: block;
+        background-color: #f0efe9;
+        height: 425px;
+        width: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      @media (min-width: 1650px) {
+        width: 1000px;
+      }
+    }
+
+    .container {
+      @media (min-width: 1180px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 100px;
+
+        @media (min-width: 1320px) {
+          gap: 250px;
+        }
+      }
+
+      .wcu-right {
+        flex: 1.2;
+
+        .wcu-image {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .wcu-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .wcu-left-box {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #66191919;
+          margin-bottom: 10px;
+          margin-top: 10px;
+
+          h3 {
+            color: #191919;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+
+            font-size: 15px;
+            padding-left: 25px;
+
+            @media (min-width: 720px) {
+              font-size: 22px;
+              padding-right: 20px;
+            }
+          }
+
+          i {
+            color: #191919;
+            border: 1px solid #191919;
+            padding: 10px;
+            border-radius: 50%;
+          }
+
+          p {
+            color: #1919199e;
+            font-size: 14px;
+
+            @media (min-width: 720px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .wcu-left-box-last {
+          border-bottom: none;
+        }
+
+        .section-title {
+          padding-bottom: 30px;
+          padding-top: 10px;
+          h2 {
+            font-size: 35px;
+          }
+
+          @media (min-width: 1180px) {
+            padding-bottom: 90px;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    background-color: #f9d783;
+    .container {
+      padding-bottom: 120px;
+      padding-left: 10px;
+
+      .section-title {
+        position: relative;
+
+        padding-top: 40px;
+
+        @media (min-width: 991px) {
+          padding-top: 70px;
+        }
+
+        h2 {
+          padding-bottom: 50px;
+          font-size: 30px;
+
+          @media (min-width: 992px) {
+            padding-bottom: 0;
+            font-size: 45px;
+          }
+        }
+
+        .btn-transparent {
+          transition: background 0.3s ease;
+          transition: color 0.3s ease;
+
+          &:hover {
+            background-color: #fff;
+            color: #191919;
+          }
+          @media (min-width: 1200px) {
+            right: 200px;
+          }
+
+          @media (min-width: 992px) {
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+          }
+        }
+      }
+
+      .team-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media (min-width: 510px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .team-person {
+          display: block;
+
+          h3 {
+            padding-top: 20px;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+
+            @media (min-width: 510px) {
+              padding-top: 40px;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            padding-right: 20px;
+
+            @media (min-width: 380px) {
+              padding-right: 0px;
+            }
+          }
+
+          p {
+            border-bottom: 1px solid #191919;
+            font-size: 14px;
+
+            @media (min-width: 510px) {
+              border-bottom: none;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .what-our-client-say {
+        background-color: #fff;
+
+        .section-title {
+          text-align: center;
+          padding-bottom: 0px;
+
+          @media (min-width: 960px) {
+            padding-bottom: 30px;
+          }
+        }
+
+        .btn-black {
+          margin-bottom: 120px;
+          margin-top: 20px;
+        }
+
+        .testimonials {
+          padding-right: 50px;
+          padding-left: 50px;
+          padding-bottom: 50px;
+
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+          }
+
+          .testimonial {
+            p {
+              font-size: 18px;
+            }
+            h2 {
+              color: #191919;
+              font-family: "DM Sans", sans-serif;
+              font-weight: 700;
+              font-size: 22px;
+            }
+
+            .position-company {
+              color: #f94d1c;
+            }
+
+            .review-stars {
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+
+            .testimonial-footer {
+              display: flex;
+              gap: 20px;
+
+              h3 {
+                margin: 0px;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .article-news {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .section-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: 35px;
+        }
+
+        a{
+          transition: background-color 0.3s ease;
+          transition: color 0.3s ease;
+        }
+
+        @media (min-width: 1170px) {
+          justify-content: start;
+          align-items: start;
+          position: relative;
+
+          .btn-transparent {
+            position: absolute;
+
+            right: 20px;
+            bottom: 100px;
+          }
+        }
+      }
+
+      .news-articles {
+        @media (min-width: 1180px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 30px;
+        }
+
+        .news {
+          position: relative;
+          .news-title {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            color: #6a6c71;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          h3 {
+            color: #191919;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+          }
+
+          p {
+            color: #191919b0;
+          }
+
+          .date-box {
+            position: absolute;
+
+            background-color: #f9d783;
+            width: 65px;
+            line-height: 0;
+            padding: 10px;
+            text-align: center;
+
+            left: 10px;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .signup-section {
+    background-color: #f0efe9;
+    position: relative;
+
+    #vector3 {
+      position: absolute;
+
+      right: 0;
+      bottom: 60px;
+    }
+
+    .container {
+      background-color: #f0efe9;
+
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 1170px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .signup-title {
+        h2 {
+          text-align: center;
+          font-size: 35px;
+          padding-bottom: 30px;
+
+          @media (min-width: 1180px) {
+            // text-align: left;
+            font-size: 40px;
+            padding-top: 40px;
+          }
+        }
+      }
+      .signup-box-class {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        @media (min-width: 1180px) {
+          flex-direction: row;
+          gap: 10px;
+        }
+
+        a{
+          transition: background-color 0.3s ease;
+          transition: color 0.3s ease;
+        }
+
+
+        .signup-box {
+          display: flex;
+          background-color: #fff;
+          // width: 70%;
+          border-radius: 25px;
+
+          margin-bottom: 30px;
+          @media (min-width: 1180px) {
+            margin-bottom: 0px;
+            width: 310px;
+            margin-right: 10px;
+          }
+
+          i {
+            margin-left: 10px;
+          }
+          input {
+            border: none;
+            width: 75%;
+            margin-left: 5px;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: #0e1021;
+  position: relative;
+
+  #vector4 {
+    position: absolute;
+
+    bottom: 40px;
+    right: 0;
+
+    color: #666666;
+    z-index: 0;
+  }
+
+  .container {
+    .footer-sections {
+      color: #fff;
+      text-decoration: none;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      gap: 10px;
+
+      padding-top: 80px;
+      padding-bottom: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      @media (min-width: 1180px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo company helpl resources link";
+
+        padding-top: 130px;
+        padding-bottom: 100px;
+      }
+
+      .logo-text {
+        grid-area: logo;
+        flex: 0.2;
+      }
+      .company-links {
+        grid-area: company;
+
+        @media (min-width: 991px) {
+          
+        }
+
+        @media (min-width: 1180px) {
+          
+        }
+      }
+      .help-links {
+        grid-area: helpl;
+        h3 {
+          margin-left: 10px;
+        }
+      }
+      .resources {
+        grid-area: resources;
+      }
+      .link {
+        grid-area: link;
+      }
+
+      .footer-section {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 15px;
+          margin-top: 50px;
+          margin-bottom: 20px;
+
+          @media (min-width: 1180px) {
+            font-size: 22px;
+          }
+        }
+
+        a {
+          color: #ffffffbe;
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.2s ease;
+        }
+
+        a:hover{
+          color: #ffffff7c;
+        }
+
+        p {
+          font-size: 10px;
+
+          @media (min-width: 1180px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .logo-text {
+        p {
+          color: #ffffffbe;
+        }
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff2b;
+  }
+
+  
+
+  .container {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+   
+
+    z-index: 1;
+    p {
+      color: #ffffffbe;
+    }
+    .socialmedia {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #707070;
+        }
+      }
+    }
+  }
+}
+
+// Down below is the SCSS for contacts page
+
+.contactpage {
+  .showcase {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    position: relative;
+
+    z-index: 0;
+
+    #vector5 {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .contact-text {
+        h1 {
+          color: #191919;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 700;
+          font-size: 56px;
+          text-align: center;
+        }
+
+        .breadcrumbs {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+
+          .home {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-options {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+
+      @media (min-width: 1180px) {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 40px;
+      }
+
+      .contact-box {
+        margin-top: 50px;
+
+        width: 350px;
+        height: 200px;
+
+        border: 1px solid #19191936;
+        padding-top: 50px;
+
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1200px) {
+          width: 420px;
+          height: 210px;
+        }
+
+        .contact-box-icon {
+          margin-right: 20px;
+
+          i {
+            border: 1px solid black;
+            
+            padding: 20px;
+            color: #fff;
+            background-color: #191919;
+            border-radius: 50%;
+
+            font-size: 22px;
+          }
+        }
+
+        .contact-box-text {
+          h2 {
+            font-size: 22px;
+            font-weight: 700;
+
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-map {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .message-form-class {
+    margin-top: 80px;
+    margin-bottom: 120px;
+
+    .container {
+      background-color: #f0efe9;
+      padding: 60px 30px;
+
+      h2 {
+        font-family: "Dm Sans", sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      form {
+        .form-input {
+          display: block;
+          width: 100%;
+          padding: 15px 30px;
+          color: #7f7f7f;
+
+          border: 1px solid #f0efe9;
+          border-radius: 25px;
+          outline: none;
+        }
+
+        .textarea {
+          resize: none;
+          height: 160px;
+        }
+
+        input:focus,
+        textarea:focus {
+          border: 1px solid #c2c1bca8;
+        }
+
+        .btn-theme {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
