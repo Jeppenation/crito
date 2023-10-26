@@ -31,69 +31,6 @@ body {
   background-color: #191919;
 }
 
-.btn-theme {
-  background-color: #f9d783;
-  border: 1px solid #f9d783;
-  color: #191919;
-  text-decoration: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
-}
-.btn-theme:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #f0efe9;
-}
-.btn-theme i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-
-.btn-black {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
-}
-.btn-black:hover {
-  background-color: #fff;
-  border: 1px solid #191919;
-  color: #191919;
-}
-.btn-black i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-
-.btn-transparent {
-  background-color: transparent;
-  border: 1px solid #191919;
-  color: #191919;
-  text-decoration: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
-}
-.btn-transparent:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #f0efe9;
-}
-.btn-transparent i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-
 .btn-play {
   color: #191919;
   padding: 20px 20px;
@@ -101,30 +38,6 @@ body {
   border-radius: 50%;
   transition: background-color 0.3s ease;
   transition: color 0.3s ease;
-}
-
-.section-title {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .section-title {
-    padding-top: 120px;
-    padding-bottom: 90px;
-  }
-}
-.section-title p {
-  color: #f94d1c;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  margin: 10px;
-}
-.section-title h2 {
-  color: #191919;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 45px;
 }
 
 .wrapper-grid {
@@ -395,27 +308,6 @@ main .our-services .container {
   background-color: #f0efe9;
   padding-bottom: 60px;
   z-index: 0;
-}
-main .our-services .container .center-content .browse-btn {
-  color: #191919;
-  text-decoration: none;
-  text-align: center;
-  border: 1px solid #191919;
-  z-index: 1;
-  border-radius: 60px;
-  padding: 20px 50px 20px;
-  background-color: #f0efe9;
-  margin-top: 50px;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
-  font-weight: 600;
-}
-main .our-services .container .center-content .browse-btn i {
-  margin-left: 15px;
-}
-main .our-services .container .center-content .browse-btn:hover {
-  background-color: #191919;
-  color: #f0efe9;
 }
 main .our-services .container .section-title {
   text-align: center;

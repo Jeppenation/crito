@@ -37,93 +37,127 @@ body {
   }
 }
 
-.btn-theme {
-  background-color: #f9d783;
-  border: 1px solid #f9d783;
-  color: #191919;
-  text-decoration: none;
+// .btn-theme {
+//   background-color: #f9d783;
+//   border: 1px solid #f9d783;
+//   color: #191919;
+//   text-decoration: none;
 
-  // creates more room for the text, and a larger button
-  padding: 12px 30px;
+//   // creates more room for the text, and a larger button
+//   padding: 12px 30px;
 
-  // 600 in font-weight is semi-bold
-  font-weight: 600;
+//   // 600 in font-weight is semi-bold
+//   font-weight: 600;
 
-  // border-radius creates a more rounder form of a button
-  border-radius: 25px;
+//   // border-radius creates a more rounder form of a button
+//   border-radius: 25px;
 
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
+//   transition: background-color 0.3s ease;
+//   transition: color 0.3s ease;
 
-  // settings for when we hover over the button
-  &:hover {
-    background-color: #191919;
-    border: 1px solid #191919;
-    color: #f0efe9;
-  }
+//   // settings for when we hover over the button
+//   &:hover {
+//     background-color: #191919;
+//     border: 1px solid #191919;
+//     color: #f0efe9;
+//   }
 
-  // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
-  i {
-    margin-left: 8px;
-    font-size: 0.9em;
-  }
-}
+//   // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+//   i {
+//     margin-left: 8px;
+//     font-size: 0.9em;
+//   }
+// }
 
-.btn-black {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #fff;
-  text-decoration: none;
+// // Below is the styling for the button below the boxes
+// .browse-btn {
+//   color: #191919;
+//   text-decoration: none;
+//   text-align: center;
+//   border: 1px solid #191919;
 
-  // creates more room for the text, and a larger button
-  padding: 12px 30px;
+//   z-index: 1;
 
-  // 600 in font-weight is semi-bold
-  font-weight: 600;
+//   // to make the border more rounder
+//   border-radius: 60px;
+//   padding: 20px 50px 20px;
+//   background-color: #f0efe9;
 
-  // border-radius creates a more rounder form of a button
-  border-radius: 25px;
+//   margin-top: 50px;
 
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
+//   // adds some transition styling ot it, it looked best (imo) with 0.1s
+//   transition: background-color 0.3s ease;
+//   transition: color 0.3s ease;
 
-  // settings for when we hover over the button
-  &:hover {
-    background-color: #fff;
-    border: 1px solid #191919;
-    color: #191919;
-  }
+//   // semi-bold
+//   font-weight: 600;
 
-  // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
-  i {
-    margin-left: 8px;
-    font-size: 0.9em;
-  }
-}
+//   // moves the arrow on the button slightly to the right
+//   i {
+//     margin-left: 15px;
+//   }
 
-.btn-transparent {
-  background-color: transparent;
-  border: 1px solid #191919;
-  color: #191919;
-  text-decoration: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 25px;
+//   &:hover {
+//     background-color: #191919;
+//     color: #f0efe9;
+//   }
+// }
 
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
+// .btn-black {
+//   background-color: #191919;
+//   border: 1px solid #191919;
+//   color: #fff;
+//   text-decoration: none;
 
-  &:hover {
-    background-color: #191919;
-    border: 1px solid #191919;
-    color: #f0efe9;
-  }
+//   // creates more room for the text, and a larger button
+//   padding: 12px 30px;
 
-  i {
-    margin-left: 8px;
-    font-size: 0.9em;
-  }
-}
+//   // 600 in font-weight is semi-bold
+//   font-weight: 600;
+
+//   // border-radius creates a more rounder form of a button
+//   border-radius: 25px;
+
+//   transition: background-color 0.3s ease;
+//   transition: color 0.3s ease;
+
+//   // settings for when we hover over the button
+//   &:hover {
+//     background-color: #fff;
+//     border: 1px solid #191919;
+//     color: #191919;
+//   }
+
+//   // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+//   i {
+//     margin-left: 8px;
+//     font-size: 0.9em;
+//   }
+// }
+
+// .btn-transparent {
+//   background-color: transparent;
+//   border: 1px solid #191919;
+//   color: #191919;
+//   text-decoration: none;
+//   padding: 12px 30px;
+//   font-weight: 600;
+//   border-radius: 25px;
+
+//   transition: background-color 0.3s ease;
+//   transition: color 0.3s ease;
+
+//   &:hover {
+//     background-color: #191919;
+//     border: 1px solid #191919;
+//     color: #f0efe9;
+//   }
+
+//   i {
+//     margin-left: 8px;
+//     font-size: 0.9em;
+//   }
+// }
 
 .btn-play {
   color: #191919;
@@ -133,34 +167,33 @@ body {
 
   transition: background-color 0.3s ease;
   transition: color 0.3s ease;
-
 }
 
-.section-title {
-  padding-top: 70px;
-  padding-bottom: 30px;
+// .section-title {
+//   padding-top: 70px;
+//   padding-bottom: 30px;
 
-  @media (min-width: 768px) {
-    padding-top: 120px;
-    padding-bottom: 90px;
-  }
+//   @media (min-width: 768px) {
+//     padding-top: 120px;
+//     padding-bottom: 90px;
+//   }
 
-  p {
-    color: #f94d1c;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+//   p {
+//     color: #f94d1c;
+//     font-family: "Inter", sans-serif;
+//     font-weight: 500;
+//     font-size: 18px;
 
-    margin: 10px;
-  }
+//     margin: 10px;
+//   }
 
-  h2 {
-    color: #191919;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 45px;
-  }
-}
+//   h2 {
+//     color: #191919;
+//     font-family: "DM Sans", sans-serif;
+//     font-weight: 700;
+//     font-size: 45px;
+//   }
+// }
 
 .wrapper-grid {
   height: 100vh;
@@ -765,39 +798,6 @@ main {
       z-index: 0;
 
       .center-content {
-        // Below is the styling for the button below the boxes
-        .browse-btn {
-          color: #191919;
-          text-decoration: none;
-          text-align: center;
-          border: 1px solid #191919;
-
-          z-index: 1;
-
-          // to make the border more rounder
-          border-radius: 60px;
-          padding: 20px 50px 20px;
-          background-color: #f0efe9;
-
-          margin-top: 50px;
-
-          // adds some transition styling ot it, it looked best (imo) with 0.1s
-          transition: background-color 0.3s ease;
-          transition: color 0.3s ease;
-
-          // semi-bold
-          font-weight: 600;
-
-          // moves the arrow on the button slightly to the right
-          i {
-            margin-left: 15px;
-          }
-
-          &:hover {
-            background-color: #191919;
-            color: #f0efe9;
-          }
-        }
       }
 
       .section-title {
@@ -931,7 +931,6 @@ main {
     position: relative;
 
     .wcu-overlaybox {
-
       @media (min-width: 1180px) {
         display: block;
         background-color: #f0efe9;
@@ -1211,7 +1210,7 @@ main {
           font-size: 35px;
         }
 
-        a{
+        a {
           transition: background-color 0.3s ease;
           transition: color 0.3s ease;
         }
@@ -1329,11 +1328,10 @@ main {
           gap: 10px;
         }
 
-        a{
+        a {
           transition: background-color 0.3s ease;
           transition: color 0.3s ease;
         }
-
 
         .signup-box {
           display: flex;
@@ -1408,11 +1406,9 @@ footer {
         grid-area: company;
 
         @media (min-width: 991px) {
-          
         }
 
         @media (min-width: 1180px) {
-          
         }
       }
       .help-links {
@@ -1454,7 +1450,7 @@ footer {
           transition: color 0.2s ease;
         }
 
-        a:hover{
+        a:hover {
           color: #ffffff7c;
         }
 
@@ -1480,17 +1476,11 @@ footer {
     background-color: #ffffff2b;
   }
 
-  
-
   .container {
-
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-   
 
     z-index: 1;
     p {
@@ -1592,7 +1582,7 @@ footer {
 
           i {
             border: 1px solid black;
-            
+
             padding: 20px;
             color: #fff;
             background-color: #191919;
